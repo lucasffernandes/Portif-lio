@@ -13,4 +13,4 @@
 <h2>Sugestões e Contribuições</h2>
 <p>Sugestões de melhorias e contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.</p>
 <h2>Acesse o Projeto</h2>
-<a href="https://lucasffernandes.github.io/Portifolio/">Portfólio Pessoal</a>
+<a href="https://lucasffernandes.github.io/Portifolio/" target="_blank" >Portfólio Pessoal</a>
