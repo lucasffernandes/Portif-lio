@@ -5,30 +5,22 @@ body {
 
 .container_cima {
     background-color: #71F79F;
-    border-radius: 10px; /* Alterado para um valor fixo para arredondar levemente os cantos */
-    width: 90%; /* Usar porcentagem para que a largura seja proporcional à largura da tela */
-    max-width: 1000px; /* Definir um limite máximo de largura */
-    height: auto; /* Ajustar a altura automaticamente */
-    min-height: 50vh; /* Definir uma altura mínima */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 50vh;
     display: grid;
     margin: 0 auto;
     place-items: center;
-    padding: 20px; /* Adicionar um pouco de padding para dar espaço interno */
-    box-sizing: border-box; /* Incluir padding e bordas na largura e altura totais */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container_cima .foto {
     max-width: 50%;
     max-height: 80%;
     border-radius: 50%;
-}
-
-/* Media query para ajustar em telas menores */
-@media (max-width: 768px) {
-    .container_cima {
-        width: 100%; /* Para telas menores, usar toda a largura disponível */
-        padding: 10px; /* Reduzir o padding em telas menores */
-    }
 }
 
 .container_baixo {
@@ -43,14 +35,14 @@ body {
 
 .container_baixo li {
     display: flex;
-    align-items: center; 
-    margin-bottom: 10px; 
+    align-items: center;
+    margin-bottom: 10px;
     color: #000000;
 }
 
 .container_baixo li a {
     color: #402D1C;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 h1 {
@@ -65,11 +57,66 @@ h2 {
 }
 
 p {
-    text-align: justify;
     text-align: center;
 }
 
-.container_baixo img {
-    max-width: 50px; 
-    max-height: 50px; 
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; 
+    }
+
+    .container_cima {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container_cima .foto {
+        max-width: 70%;
+    }
+
+    .container_baixo img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container_cima {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container_cima .foto {
+        max-width: 60%;
+    }
+
+    .container_baixo img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .container_cima {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container_cima .foto {
+        max-width: 50%;
+    }
+
+    .container_baixo img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
 }
